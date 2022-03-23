@@ -11,8 +11,8 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:paddingHorizontal="@dimen/common_padding_default">
-        <!---->
+        android:paddingHorizontal="@dimen/common_padding_default"
+        android:paddingBottom="@dimen/padding_medida_minima_comun">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -105,15 +105,12 @@
             android:textSize="@dimen/profile_text_size_large"
             android:textStyle="bold"
             app:drawableTint="@color/teal_700" />
-        <!--        Terea, es crear otro textxView con el drawabelStart y agregar icono del engrane
-        en el anterior textView de mapa usamor appCompatTextView para poner el drawable y el tint
-        sin cambiar el tipo de TextView use el app:drawablestartcompat y con eso se soluciono-->
 
         <TextView
             android:id="@+id/tvSettings"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/common_padding_default"
+            android:layout_marginTop="@dimen/common_padding_large"
             android:text="@string/enable_location"
             android:textSize="@dimen/profile_text_size_middle"
             app:drawableStartCompat="@drawable/ic_settings" />

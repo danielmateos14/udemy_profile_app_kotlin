@@ -6,4 +6,5 @@
     <dimen name="padding_medida_minima_comun">8dp</dimen>
     <dimen name="profile_text_size_large">24sp</dimen>
     <dimen name="profile_text_size_middle">16sp</dimen>
+    <dimen name="common_padding_large">32dp</dimen>
 </resources>
