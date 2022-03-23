@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>activity_main.xml</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #e8bf6a;}
+.s1 { color: #bababa;}
+.s2 { color: #6a8759;}
+.s3 { color: #a9b7c6;}
+.s4 { color: #808080;}
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+activity_main.xml</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">&lt;?</span><span class="s1">xml version</span><span class="s2">=&quot;1.0&quot; </span><span class="s1">encoding</span><span class="s2">=&quot;utf-8&quot;</span><span class="s0">?&gt;</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0">&lt;ScrollView </span><span class="s1">xmlns:android</span><span class="s2">=&quot;http://schemas.android.com/apk/res/android&quot;</span>
+<a name="l3"><span class="ln">3    </span></a>    <span class="s1">xmlns:app</span><span class="s2">=&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+<a name="l4"><span class="ln">4    </span></a>    <span class="s1">xmlns:tools</span><span class="s2">=&quot;http://schemas.android.com/tools&quot;</span>
+<a name="l5"><span class="ln">5    </span></a>    <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+<a name="l6"><span class="ln">6    </span></a>    <span class="s1">android:layout_height</span><span class="s2">=&quot;match_parent&quot;</span>
+<a name="l7"><span class="ln">7    </span></a>    <span class="s1">tools:context</span><span class="s2">=&quot;.MainActivity&quot;</span><span class="s0">&gt;</span>
+<a name="l8"><span class="ln">8    </span></a>
+<a name="l9"><span class="ln">9    </span></a>    <span class="s0">&lt;LinearLayout</span>
+<a name="l10"><span class="ln">10   </span></a>        <span class="s1">android:layout_width</span><span class="s2">=&quot;match_parent&quot;</span>
+<a name="l11"><span class="ln">11   </span></a>        <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+<a name="l12"><span class="ln">12   </span></a>        <span class="s1">android:paddingHorizontal</span><span class="s2">=&quot;@dimen/common_padding_default&quot;</span>
+<a name="l13"><span class="ln">13   </span></a>        <span class="s1">android:gravity</span><span class="s2">=&quot;center_horizontal&quot;</span>
+<a name="l14"><span class="ln">14   </span></a>        <span class="s1">android:orientation</span><span class="s2">=&quot;vertical&quot;</span><span class="s0">&gt;</span>
+<a name="l15"><span class="ln">15   </span></a><span class="s4">&lt;!--Vamo a agregar un cardView, es un elemento que sirve para contener otros elementos pero su diseño 
+<a name="l16"><span class="ln">16   </span></a>es mas prolijo, el cardView debe tener hijos y su hijo sera el imageView 
+<a name="l17"><span class="ln">17   </span></a>- layoutMargin, se lo ponemos para que tenga espacio para que se vea la sombra del circulo 
+<a name="l18"><span class="ln">18   </span></a>- cornerRadious, es para que la card o los hijos de la card sean redondeados y para hacer el circulo 
+<a name="l19"><span class="ln">19   </span></a>perfecto se usa la mitad de la medida que le pusimos al imageView 
+<a name="l20"><span class="ln">20   </span></a>- cardElevation, es la sombra de la card 
+<a name="l21"><span class="ln">21   </span></a>- scaleType, es para hacer un zoom o escalar la imagen de un lado de otro al centro, todoo siempre 
+<a name="l22"><span class="ln">22   </span></a>dentro de la medida que se le dio, dentro de un tipo marco--&gt;</span>
+<a name="l23"><span class="ln">23   </span></a>
+<a name="l24"><span class="ln">24   </span></a>        <span class="s0">&lt;androidx.cardview.widget.CardView</span>
+<a name="l25"><span class="ln">25   </span></a>            <span class="s1">android:layout_width</span><span class="s2">=&quot;wrap_content&quot;</span>
+<a name="l26"><span class="ln">26   </span></a>            <span class="s1">android:layout_height</span><span class="s2">=&quot;wrap_content&quot;</span>
+<a name="l27"><span class="ln">27   </span></a>            <span class="s1">android:layout_margin</span><span class="s2">=&quot;@dimen/common_padding_default&quot;</span>
+<a name="l28"><span class="ln">28   </span></a>            <span class="s1">app:cardCornerRadius</span><span class="s2">=&quot;@dimen/radio_imagen_redonda_perfil&quot;</span>
+<a name="l29"><span class="ln">29   </span></a>            <span class="s1">app:cardElevation</span><span class="s2">=&quot;@dimen/common_padding_default&quot;</span><span class="s0">&gt;</span>
+<a name="l30"><span class="ln">30   </span></a>
+<a name="l31"><span class="ln">31   </span></a>            <span class="s0">&lt;ImageView</span>
+<a name="l32"><span class="ln">32   </span></a>                <span class="s1">android:layout_width</span><span class="s2">=&quot;@dimen/profile_image_size_large&quot;</span>
+<a name="l33"><span class="ln">33   </span></a>                <span class="s1">android:layout_height</span><span class="s2">=&quot;@dimen/profile_image_size_large&quot;</span>
+<a name="l34"><span class="ln">34   </span></a>                <span class="s1">android:src</span><span class="s2">=&quot;@drawable/cursos_android_ant&quot;</span>
+<a name="l35"><span class="ln">35   </span></a>                <span class="s1">android:scaleType</span><span class="s2">=&quot;centerCrop&quot;</span><span class="s0">/&gt;</span>
+<a name="l36"><span class="ln">36   </span></a>
+<a name="l37"><span class="ln">37   </span></a>        <span class="s0">&lt;/androidx.cardview.widget.CardView&gt;</span>
+<a name="l38"><span class="ln">38   </span></a>
+<a name="l39"><span class="ln">39   </span></a>    <span class="s0">&lt;/LinearLayout&gt;</span>
+<a name="l40"><span class="ln">40   </span></a>
+<a name="l41"><span class="ln">41   </span></a><span class="s0">&lt;/ScrollView&gt;</span></pre>
+</body>
+</html>

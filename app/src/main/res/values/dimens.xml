@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_padding_default">16dp</dimen>
+    <dimen name="profile_image_size_large">256dp</dimen>
+    <dimen name="radio_imagen_redonda_perfil">128dp</dimen>
+    <dimen name="padding_medida_minima_comun">8dp</dimen>
+</resources>
