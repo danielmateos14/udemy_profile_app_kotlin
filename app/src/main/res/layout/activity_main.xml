@@ -12,14 +12,7 @@
         android:paddingHorizontal="@dimen/common_padding_default"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-<!--Vamo a agregar un cardView, es un elemento que sirve para contener otros elementos pero su diseño
-es mas prolijo, el cardView debe tener hijos y su hijo sera el imageView
-- layoutMargin, se lo ponemos para que tenga espacio para que se vea la sombra del circulo
-- cornerRadious, es para que la card o los hijos de la card sean redondeados y para hacer el circulo
-perfecto se usa la mitad de la medida que le pusimos al imageView
-- cardElevation, es la sombra de la card
-- scaleType, es para hacer un zoom o escalar la imagen de un lado de otro al centro, todoo siempre
-dentro de la medida que se le dio, dentro de un tipo marco-->
+<!---->
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -32,9 +25,35 @@ dentro de la medida que se le dio, dentro de un tipo marco-->
                 android:layout_width="@dimen/profile_image_size_large"
                 android:layout_height="@dimen/profile_image_size_large"
                 android:src="@drawable/cursos_android_ant"
+                android:contentDescription="@string/tv_image_profile"
                 android:scaleType="centerCrop"/>
 
         </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:text="@string/hint_name"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/profile_text_size_large"
+            android:textColor="@color/black"
+            tools:text="Cursos Android ANT"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:text="@string/hint_mail"/>
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/profile_text_size_middle"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            tools:text="luisdmateos@gmail.com"/>
 
     </LinearLayout>
 

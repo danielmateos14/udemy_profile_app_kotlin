@@ -4,4 +4,6 @@
     <dimen name="profile_image_size_large">256dp</dimen>
     <dimen name="radio_imagen_redonda_perfil">128dp</dimen>
     <dimen name="padding_medida_minima_comun">8dp</dimen>
+    <dimen name="profile_text_size_large">24sp</dimen>
+    <dimen name="profile_text_size_middle">16sp</dimen>
 </resources>
