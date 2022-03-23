@@ -102,7 +102,7 @@
             android:drawableEnd="@drawable/ic_map"
             android:text="@string/main_show_map"
             android:textColor="@color/black"
-            android:textSize="@dimen/profile_text_size_large"
+            android:textSize="@dimen/profile_text_size_middle"
             android:textStyle="bold"
             app:drawableTint="@color/teal_700" />
 
