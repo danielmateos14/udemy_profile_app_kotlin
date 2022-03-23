@@ -3,4 +3,8 @@
     <string name="hint_name">Nombre</string>
     <string name="hint_mail">Correo Electronico</string>
     <string name="tv_image_profile">Imagen de perfil</string>
+    <string name="hint_web_site">Sitio Web</string>
+    <string name="hint_phone_number">Teléfono</string>
+    <string name="hint_location">Ubicación</string>
+    <string name="main_show_map">Ver en el mapa</string>
 </resources>

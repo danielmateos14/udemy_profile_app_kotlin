@@ -54,6 +54,50 @@
             android:textColor="@color/black"
             android:textStyle="italic"
             tools:text="luisdmateos@gmail.com"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:text="@string/hint_web_site"/>
+        <TextView
+            android:id="@+id/tvWebSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/profile_text_size_middle"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            tools:text="www.djdenielb.com"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:text="@string/hint_phone_number"/>
+        <TextView
+            android:id="@+id/tv_Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/profile_text_size_large"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            tools:text="5540373031"/>
+<!--        Creamos un icono para que aparezca como tipo mapa, usamos el appcompat para poder poner
+el drawableTint que es para colorear el icon del mapa, el tint funciona arriba del API 23 con app:
+en lugar de android:-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_default"
+            android:text="@string/hint_location"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_show_map"
+            android:textSize="@dimen/profile_text_size_large"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:drawableEnd="@drawable/ic_map"
+            app:drawableTint="@color/teal_700"/>
 
     </LinearLayout>
 
