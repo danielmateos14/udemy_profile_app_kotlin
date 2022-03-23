@@ -1,5 +1,6 @@
 package com.example.profile
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         updateUI()
 
         binding.tvLocation.setOnClickListener {
-            binding.tvLocation.text = "Latitud: $lat \nLongitud: $long"
+            startActivity(Intent(this,EditActivity::class.java))
         }
 
     }
