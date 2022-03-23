@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    Creamos un menu para la actividad principal para poder lanzar
+la segunda actividad la de edit
+Creamos el item y ponemos que no se muestre nunca, que este oculto en los 3 puntos-->
+
+    <item
+        android:id="@+id/action_edit"
+        android:title="@string/edit_title"
+        app:showAsAction="never"/>
+
+</menu>
