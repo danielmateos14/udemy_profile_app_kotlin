@@ -88,6 +88,42 @@
                 android:inputType="phone"/>
         </com.google.android.material.textfield.TextInputLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/common_padding_default"
+            android:layout_marginTop="@dimen/common_padding_default">
+<!--Number signed permite poner un signo antes del numero, para este caso lo usamos para poner
+coordenadas con numeros negativos, permite signos positivos y negativos, ponemos el imeOptiones
+para que el foco pueda avanzar desde latitud a longitud-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="@dimen/common_padding_none"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:hint="@string/hint_lat"
+                android:layout_marginEnd="@dimen/common_padding_default">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLatitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/etLongitude"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="@dimen/common_padding_none"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:hint="@string/hint_long">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etLongitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal|numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

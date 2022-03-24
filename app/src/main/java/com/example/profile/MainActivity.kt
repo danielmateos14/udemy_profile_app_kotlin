@@ -42,18 +42,17 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-//    Inflamos el menu de la actividad main y le asignamos una funcion al seleccionar el item
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main,menu)
+        menuInflater.inflate(R.menu.menu_main, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
-//    Este override es para indicar que estamos seleccionando un item, en este caso si el item
-//    seleccionado es el que creamos lanzara la editactivity
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.action_edit){
-            startActivity(Intent(this,EditActivity::class.java))
+        if (item.itemId == R.id.action_edit) {
+            val intent: Intent = Intent(this, EditActivity::class.java)
+            intent.putExtra("llaveNombre", binding.tvName.text)
+            startActivity(intent)
         }
         return super.onOptionsItemSelected(item)
     }
