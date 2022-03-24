@@ -17,9 +17,12 @@ class EditActivity : AppCompatActivity() {
         binding.etMail.setText(intent.extras?.getString(getString(R.string.key_mail)))
         binding.etWebSite.setText(intent.extras?.getString(getString(R.string.key_website)))
         binding.etPhoneNumber.setText(intent.extras?.getString(getString(R.string.key_phone)))
-        binding.etLatitude.setText(intent.extras?.getDouble(getString(R.string.key_latitude)).toString())
-        binding.etLongitude.setText(intent.extras?.getDouble(getString(R.string.key_longitud)).toString())
+        binding.etLatitude.setText(intent.extras?.getDouble(getString(R.string.key_latitude))
+            .toString())
+        binding.etLongitude.setText(intent.extras?.getDouble(getString(R.string.key_longitud))
+            .toString())
 
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -30,6 +33,8 @@ class EditActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_save){
             finish()
+        }else if (item.itemId == android.R.id.home){
+            onBackPressed()
         }
         return super.onContextItemSelected(item)
     }
