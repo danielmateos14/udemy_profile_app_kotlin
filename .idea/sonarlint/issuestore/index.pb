@@ -30,3 +30,5 @@ Gapp/src/androidTest/java/com/example/profile/ExampleInstrumentedTest.kt,8\f\8f
 ,exportToHTML/layout/._activity_main.xml.html,8\b\8bd7f437f969d0742519fccbc2bba3528ee0848e
 Z
 *exportToHTML/layout/activity_main.xml.html,7\0\70d08978e5da80dd55cf13b7b309312a872b3f9b
+@
+app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164

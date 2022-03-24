@@ -2,11 +2,9 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<!--    Este menu aparecera en la editActivity y le agregamos un icono de checed
-una palomita, le puse un tint blanco y en show ifRoom quiere decir si hay espacio-->
 
     <item
-        android:id="action_save"
+        android:id="@+id/action_save"
         android:title=""
         android:icon="@drawable/ic_check"
         app:iconTint="@color/white"
