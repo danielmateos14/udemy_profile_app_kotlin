@@ -51,7 +51,12 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == R.id.action_edit) {
             val intent: Intent = Intent(this, EditActivity::class.java)
-            intent.putExtra("llaveNombre", binding.tvName.text)
+            intent.putExtra(getString(R.string.key_name), binding.tvName.text)
+            intent.putExtra(getString(R.string.key_mail), binding.tvEmail.text)
+            intent.putExtra(getString(R.string.key_website), binding.tvWebSite.text)
+            intent.putExtra(getString(R.string.key_phone), binding.tvPhone.text)
+            intent.putExtra(getString(R.string.key_latitude),lat)
+            intent.putExtra(getString(R.string.key_longitud),long)
             startActivity(intent)
         }
         return super.onOptionsItemSelected(item)

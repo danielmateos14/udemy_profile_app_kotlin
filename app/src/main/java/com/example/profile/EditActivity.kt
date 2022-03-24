@@ -13,7 +13,13 @@ class EditActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityEditBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.etName.setText(intent.extras?.getString("llaveNombre"))
+        binding.etName.setText(intent.extras?.getString(getString(R.string.key_name)))
+        binding.etMail.setText(intent.extras?.getString(getString(R.string.key_mail)))
+        binding.etWebSite.setText(intent.extras?.getString(getString(R.string.key_website)))
+        binding.etPhoneNumber.setText(intent.extras?.getString(getString(R.string.key_phone)))
+        binding.etLatitude.setText(intent.extras?.getDouble(getString(R.string.key_latitude)).toString())
+        binding.etLongitude.setText(intent.extras?.getDouble(getString(R.string.key_longitud)).toString())
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

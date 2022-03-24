@@ -11,4 +11,10 @@
     <string name="edit_title">Editar datos de usuario</string>
     <string name="hint_lat">Latitúd</string>
     <string name="hint_long">Longitud</string>
+    <string name="key_website">llaveWebSite</string>
+    <string name="key_name">llaveNombre</string>
+    <string name="key_mail">llaveMail</string>
+    <string name="key_phone">llavePhone</string>
+    <string name="key_latitude">llaveLat</string>
+    <string name="key_longitud">llaveLong</string>
 </resources>
